@@ -1,0 +1,28 @@
+{
+  "isSuccess": true,
+  "errorMsg": "",
+  "errorCode": 0,
+  "data": [
+    {
+      "src": "images/photos/photo_zhangtianai.jpg",
+      "user": "张天爱",
+      "skill": "演戏",
+      "price": "666",
+      "num": "4490"
+    },
+    {
+      "src": "images/photos/photo_zhengshuang.jpg",
+      "user": "郑爽",
+      "skill": "唱歌",
+      "price": "888",
+      "num": "6582"
+    },
+    {
+      "src": "images/photos/photo_zhaoliying.jpg",
+      "user": "赵丽颖",
+      "skill": "跳舞",
+      "price": "999",
+      "num": "8856"
+    }
+  ]
+}

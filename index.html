@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>魅狐来了</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=2,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link type="text/css" rel="stylesheet" href="libs/swiper.min.css">
+   <link type="text/css" rel="stylesheet" href="libs/animate.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+  <!--   <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">-->
+</head>
+<body>
+    <header class="header">
+       <span class="left">
+           <i class="fa fa-map-marker f20"></i>
+           北京
+       </span>
+       <h3>魅狐来了</h3>
+       <i class="fa fa-gift f20 right"></i>
+    </header>
+
+    <div class="content">
+        <div class="con swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="banner swiper-container">
+                        <div class="swiper-wrapper">
+                            <a href="javascript: ;" class="swiper-slide">
+                                <img src="images/banner/banner.jpg" alt="">
+                            </a>
+                            <a href="javascript: ;" class="swiper-slide">
+                                <img src="images/banner/banner.jpg" alt="">
+                            </a>
+                            <a href="javascript: ;" class="swiper-slide">
+                                <img src="images/banner/banner.jpg" alt="">
+                            </a>
+                            <a href="javascript: ;" class="swiper-slide">
+                                <img src="images/banner/banner.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="nav" id="wrapper">
+                        <div class="scroller">
+                            <div class="nav-list">
+                                <a href="javascript: ;">
+                                    <i class="fa fa-heart-o f26 bg-purple"></i>
+                                    <p>服务标准</p>
+                                </a>
+                                <a href="javascript: ;">
+                                    <i class="fa fa-cab f26 bg-lime"></i>
+                                    <p>产品标准</p>
+                                </a>
+                                <a href="javascript: ;">
+                                    <i class="fa fa-hand-paper-o f26 bg-fuchsia"></i>
+                                    <p>技法标准</p>
+                                </a>
+                                <a href="javascript: ;">
+                                    <i class="fa fa-unlock f26 bg-orange"></i>
+                                    <p>选拔标准</p>
+                                </a>
+                                <a href="javascript: ;">
+                                    <i class="fa fa-sitemap f26 bg-red"></i>
+                                    <p>流程标准</p>
+                                </a>
+                                <a href="javascript: ;">
+                                    <i class="fa fa-heart-o f26 bg-purple"></i>
+                                    <p>服务标准</p>
+                                </a>
+                                <a href="javascript: ;">
+                                    <i class="fa fa-cab f26 bg-lime"></i>
+                                    <p>产品标准</p>
+                                </a>
+                                <a href="javascript: ;">
+                                    <i class="fa fa-hand-paper-o f26 bg-fuchsia"></i>
+                                    <p>技法标准</p>
+                                </a>
+                                <a href="javascript: ;">
+                                    <i class="fa fa-unlock f26 bg-orange"></i>
+                                    <p>选拔标准</p>
+                                </a>
+                                <a href="javascript: ;">
+                                    <i class="fa fa-sitemap f26 bg-red"></i>
+                                    <p>流程标准</p>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="btn">
+                            <i class="fa fa-angle-right f20"></i>
+                        </button>
+                    </div>
+                    <div class="advertisement">
+                        <div class="adv-left">
+                            <img src="images/imgs/adv_anmo.jpg" alt="" class="animated bounceInLeft">
+                        </div>
+                        <div class="adv-right">
+                            <img src="images/imgs/adv_meirong.jpg" alt="" class="animated bounceInUp">
+                            <img src="images/imgs/adv_jiansheng.jpg" alt="" class="animated bounceInDown">
+                        </div>
+                    </div>
+                    <div class="tit">
+                        <b></b>
+
+                        <p>手艺人推荐</p>
+                    </div>
+                    <div class="message"></div>
+                </div>
+                <div class="swiper-slide bg-orange">2222</div>
+                <div class="swiper-slide bg-aqua">3333</div>
+                <div class="swiper-slide bg-green">4444</div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="footer-nav">
+            <a href="javascript: ;" class="active">
+                <i class="fa fa-home f20"></i>
+
+                <p>首页</p>
+            </a>
+            <a href="javascript: ;">
+                <i class="fa fa-file-text-o f20"></i>
+
+                <p>订单</p>
+            </a>
+            <a href="javascript: ;">
+                <i class="fa fa-user-o f20"></i>
+
+                <p>我的</p>
+            </a>
+            <a href="javascript: ;">
+                <i class="fa fa-ellipsis-h f20"></i>
+
+                <p>更多</p>
+            </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="libs/swiper.min.js"></script>
+    <script type="text/javascript" src="libs/zepto.min.js"></script>
+    <script type="text/javascript" src="libs/touch.js"></script>
+    <script type="text/javascript" src="libs/iscroll-4.2.js"></script>
+    <script type="text/javascript">
+        var banner = new Swiper('.banner',{
+            pagination: '.swiper-pagination'
+        })
+        var con = new Swiper('.con')
+        var scroll=new iScroll('wrapper',{
+            scrollX:true,
+            scrollY:false
+        })
+        $.ajax({
+            url: 'data/data.json',
+            success: function (res) {
+                if (res.isSuccess && res.errorCode == 0) {
+                    var str = '';
+                    $.each(res.data, function (i, obj) {
+                        str += '<dl>' +
+                                '<dt>' +
+                                '<img src="'+obj.src+'" alt="">' +
+                                '</dt>' +
+                                '<dd>' +
+                                '<h3>'+obj.user+'</h3>' +
+                                '<p>擅长：'+obj.skill+'</p>' +
+                                '<p>' +
+                                '<span><em>¥'+obj.price+'元</em> /40分钟</span>' +
+                                '<span class="float-right">接单量：<b>'+obj.num+'</b></span>' +
+                                '</p>' +
+                                '</dd>' +
+                                '</dl>'
+                    })
+                    $('.message').html(str)
+                }
+            }
+        })
+        var n = 0;
+        $('.btn').on('tap',function(){
+            scroll.scrollToElement("a:nth-child("+(++n)+")",1000)
+        })
+
+        $('.footer-nav').on('tap','a',function(){
+            $(this).addClass('active').siblings().removeClass();
+            var idx=$(this).index();
+            con.slideTo(idx, 1000, false);
+        })
+    </script>
+</body>
+</html>
